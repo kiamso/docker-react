@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t kiamso/docker-ract -f Dockerfile.dev . 
+  - docker build -t kiamso/docker-react -f Dockerfile.dev . 
 
 script:
   - docker run -e CI=true kiamso/docker-react npm run test  
